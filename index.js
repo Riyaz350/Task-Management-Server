@@ -6,7 +6,8 @@ const app = express()
 const port = process.env.PORT || 5000
 
 app.use(express.json())
-app.use(cors({  origin:[ 'http://localhost:5173', 'http://localhost:5174'],
+app.use(cors({  origin:[ 'http://localhost:5173', 'http://localhost:5174', 'https://65857a821eb607c3ccc8b35b--profound-tartufo-7bef1f.netlify.app', 
+  'https://6585819a818c42bf8128607e--profound-tartufo-7bef1f.netlify.app'],
     credentials:true
 }
 ))
